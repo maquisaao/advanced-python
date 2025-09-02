@@ -101,3 +101,13 @@ idade = 32
 maior_de_idade = idade >= 18
 print('Nome:', nome, 'Idade:', idade)
 print('É maior?', maior_de_idade)
+
+# Exercicio Variaveis = crie variaveis a seguir:
+
+print('Nome:', nome)
+print('SobreNome', sobrenome) 
+print('Idade:', idade)
+print('Ano de Nascimento:', ano_nascimento)
+print('É maior?', maior_de_idade)
+print('Altura:', altura)
+
