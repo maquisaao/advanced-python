@@ -111,10 +111,10 @@ ano_nascimento = 1993
 maior_de_idade = idade >= 18
 altura = 1.80
 
-print('Nome:', nome)
-print('SobreNome', sobrenome) 
-print('Idade:', idade)
-print('Ano de Nascimento:', ano_nascimento)
-print('É maior?', maior_de_idade)
-print('Altura:', altura)
+print('Nome:', nome) # str
+print('SobreNome', sobrenome)  # str
+print('Idade:', idade) # int
+print('Ano de Nascimento:', ano_nascimento) # int
+print('É maior?', maior_de_idade) # bool
+print('Altura:', altura) # float 
 
