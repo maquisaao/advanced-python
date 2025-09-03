@@ -118,3 +118,5 @@ print('Ano de Nascimento:', ano_nascimento) # int
 print('É maior?', maior_de_idade) # bool
 print('Altura:', altura) # float 
 
+
+
