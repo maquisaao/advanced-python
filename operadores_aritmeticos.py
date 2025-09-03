@@ -33,3 +33,12 @@ a_dez_vezes = 'A' * 10
 tres_vezes_max = 3 * 'Max'
 print(a_dez_vezes)
 print(tres_vezes_max)
+
+#precedência de operadores
+
+# 1. (n + n) sempre de dentro pra fora
+# 2. ** 
+# 3. * / // % 
+# 4. + - 
+conta_1 = (1 + int(0.5 + 0.5)) ** (5 + 5)
+print(conta_1)
