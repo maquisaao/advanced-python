@@ -10,7 +10,7 @@ print('Multiplicação', multiplicacao)
 divisao = 10 / 3  # float
 print('Divisão', divisao)
 
-divisao_inteira = 10 // 3
+divisao_inteira = 10 // 3 # corta as casas decimais
 print('Divisão inteira', divisao_inteira)
 
 exponenciacao = 2 ** 10
@@ -24,3 +24,12 @@ print(16 % 8 == 0)
 print(10 % 2 == 0)
 print(15 % 2 == 0)
 print(16 % 2 == 0)
+
+
+concatenacao = 'Max' + ' ' + 'Pinheiro'
+print(concatenacao)
+
+a_dez_vezes = 'A' * 10
+tres_vezes_max = 3 * 'Max'
+print(a_dez_vezes)
+print(tres_vezes_max)
