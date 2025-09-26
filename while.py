@@ -107,3 +107,4 @@ while i < len(string):
 else:
     print('Não encontrei um espaço na string.')
 print('Fora do while.')
+
