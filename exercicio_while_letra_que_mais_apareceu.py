@@ -12,7 +12,7 @@ letra_vencedora = ''
 while indice < len(frase):
     letra_atual = frase[indice]
 
-    if letra_atual == ' ':
+    if letra_atual == ' ': 
         indice += 1
         continue
 
