@@ -6,25 +6,27 @@ frase = 'Python é uma linguagem de programação interpretada, de alto nível, 
 
 
 indice = 0 
-letra_sendo_usada = []
-letra_vencedora = []
-letra_atual = []
-qnt_vezes_letra_atual_apareceu = 0
-qnt_vezes_letra_anterior_apareceu = 0
+qnt_vencedora = 0
+letra_vencedora = ''
 
-while indice < len(frase.lower()):
-
+while indice < len(frase):
     letra_atual = frase[indice]
-    qnt_vezes_letra_atual_apareceu = frase.count(letra_atual)
 
-    if qnt_vezes_letra_atual_apareceu < qnt_vezes_letra_anterior_apareceu:
-        letra_vencedora = letra_atual
+    if letra_atual == ' ':
         indice += 1
-    else:
-        
-        indice +=1
+        continue
 
-    
+    qnt_atual = frase.count(letra_atual)
+
+    if qnt_vencedora < qnt_atual:
+        qnt_vencedora = qnt_atual
+        letra_vencedora = letra_atual
+
+    indice += 1
+
+print(f'A letra que apareceu mais vezes foi "{letra_vencedora}" que apareceu {qnt_vencedora}x')
+
+
     
 
 
