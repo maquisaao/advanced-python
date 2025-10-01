@@ -14,3 +14,7 @@ na palavra secreta.
 Faça a contagem de tentativas do seu
 usuário.
 """
+
+# garantir que seja enviada apenas UMA letra por vez e sinalizar o usuario se sair mais (acho que da pra usar continue)
+# validar se a letra digitada está na palavra secreta 
+# guardar cada letra acertada (talvez concatenando com a lista das letras acertadas)
