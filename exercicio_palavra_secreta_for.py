@@ -36,6 +36,7 @@ while True:
             palavra_digitada += letra_secreta
         else:
             palavra_digitada += '*'
+            print("")
     qnt_letras_digitadas += 1 # implementar as tentativas até finalizar o jogo
 
     print(f'{palavra_digitada}')
