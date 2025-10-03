@@ -104,3 +104,13 @@ lista_b = lista_a.copy()
 lista_a[0] = 'Qualquer coisa'
 print(lista_a)
 print(lista_b)
+
+"""
+AULA 6
+for in com listas
+"""
+lista = ['Maria', 'Helena', 'Luiz']
+
+for nome in lista:
+    print(nome, type(nome))
+
