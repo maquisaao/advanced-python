@@ -61,7 +61,7 @@ Criar, ler, alterar, apagar = lista[i] (CRUD)
 """
 #        0   1   2   3
 lista = [10, 20, 30, 40]
-lista.append('Luiz')
+lista.append('Max')
 nome = lista.pop()
 lista.append(1233)
 del lista[-1]
@@ -91,3 +91,16 @@ lista_b = [4, 5, 6]
 lista_c = lista_a + lista_b
 lista_a.extend(lista_b)
 print(lista_a)
+
+"""
+AULA 5
+Cuidados com dados mutáveis
+= - copiado o valor (imutáveis)
+= - aponta para o mesmo valor na memória (mutável)
+"""
+lista_a = ['Max', 'Maria', 1, True, 1.2]
+lista_b = lista_a.copy()
+
+lista_a[0] = 'Qualquer coisa'
+print(lista_a)
+print(lista_b)
