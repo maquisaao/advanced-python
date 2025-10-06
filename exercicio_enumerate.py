@@ -14,14 +14,16 @@ while True:
     opcao = input('[i]nserir [a]pagar [l]istar: ')
 
     if opcao == 'i':
-        entrada = input('Produto: ')
-        lista.append(entrada)
+        os.system('cls')
+        valor = input('Valor: ')
+        lista.append(valor)
     elif opcao == 'a':
-        indice = int(input(
+        indice_str = input(
             'Escolha o índice para apagar: '
-        ))
+        )
 
         try:
+            indice = int(indice_str)
             del lista[indice]
         except ValueError:
             print('Por favor digite número int.')
@@ -30,6 +32,7 @@ while True:
         except Exception:
             print('Erro desconhecido')
     elif opcao == 'l':
+        os.system('cls')
 
         if len(lista) == 0:
             print('Nada para listar')
