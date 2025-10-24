@@ -47,7 +47,7 @@ contagem regressiva começando de 11
 """
 
 # ------------------ MINHA SOLUÇÃO -----------------------------------------------------------
-dez_digitos = [cpf[:9] + str(digito_1)] # juntar os 9 digitos com o digito 1 da primeira validação
+dez_digitos = nove_digitos + str(digito_1)
 contador_regressivo_2 = 11
 
 resultado_digito_2 = 0
