@@ -46,7 +46,7 @@ multiplicando cada um dos valores por uma
 contagem regressiva começando de 11
 """
 
-cpf = '74682489070' # pode receber um cpf por input ou por banco de dados no futuro
+# ------------------ MINHA SOLUÇÃO -----------------------------------------------------------
 dez_digitos = [cpf[:9] + str(digito_1)] # juntar os 9 digitos com o digito 1 da primeira validação
 contador_regressivo_2 = 11
 
@@ -61,3 +61,35 @@ print(f'O segundo digito é: {digito_2}')
 
 if str(digito_1) == cpf[9] and str(digito_2) == cpf[10]:
     print(f'O cpf {cpf} está de acordo com o algoritmo da receita e tem seus digitos finais "{digito_1}" e "{digito_2}".')
+else:
+    print('Cpf inválido')
+
+# ------------------ SOLUÇÃO PROFESSOR -----------------------------------------------------------
+
+cpf_enviado_usuario = '74682489070'
+nove_digitos = cpf_enviado_usuario[:9]
+contador_regressivo_1 = 10
+
+resultado_digito_1 = 0
+for digito in nove_digitos:
+    resultado_digito_1 += int(digito) * contador_regressivo_1
+    contador_regressivo_1 -= 1
+digito_1 = (resultado_digito_1 * 10) % 11
+digito_1 = digito_1 if digito_1 <= 9 else 0
+
+dez_digitos = nove_digitos + str(digito_1)
+contador_regressivo_2 = 11
+
+resultado_digito_2 = 0
+for digito in dez_digitos:
+    resultado_digito_2 += int(digito) * contador_regressivo_2
+    contador_regressivo_2 -= 1
+digito_2 = (resultado_digito_2 * 10) % 11
+digito_2 = digito_2 if digito_2 <= 9 else 0
+
+cpf_gerado_pelo_calculo = f'{nove_digitos}{digito_1}{digito_2}'
+
+if cpf_enviado_usuario == cpf_gerado_pelo_calculo:
+    print(f'{cpf_enviado_usuario} é válido')
+else:
+    print('CPF inválido')
